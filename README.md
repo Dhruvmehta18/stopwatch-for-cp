@@ -10,8 +10,18 @@ For running this stopwatch
 ```json
     python stopwatch.py
 ```
-2. By making exe file (for using in real time)
+2. By making exe file (for using in real time)\
+    First install pyinstaller
 ```json
     pip install pyinstaller
+```
+
+if you want to make exe file as whole you use this commands,but the start time is more in in this command
+
+```json   
     pyinstaller -w -F stopwatch.py
+```
+Or use this command for faster start time
+```json
+    pyinstaller -w stopwatch.py
 ```
