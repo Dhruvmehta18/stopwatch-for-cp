@@ -25,3 +25,4 @@ Or use this command for faster start time
 ```json
     pyinstaller -w stopwatch.py
 ```
+After making exe file. The exe file will be under dist folder
