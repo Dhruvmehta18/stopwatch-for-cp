@@ -1,0 +1,5 @@
+build
+dist
+stopwatch.spec
+__pycache__
+.vscode
