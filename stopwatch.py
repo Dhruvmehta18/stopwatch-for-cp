@@ -148,11 +148,11 @@ minutes_label = Label(lbl,text='00', font=(font_family, big_size, 'bold'),
                       background=p_color, foreground=text_color)
 hours_label = Label(lbl,text='00', font=(font_family, big_size, 'bold'),
                     background=p_color, foreground=text_color)
-colon1_label = Label(lbl,text=':', font=(font_family, 36, 'bold'),
+colon1_label = Label(lbl,text=':', font=(font_family, large_size, 'bold'),
                     background=p_color, foreground=text_color, borderwidth=0)
-colon2_label = Label(lbl, text=':', font=(font_family, 36, 'bold'),
+colon2_label = Label(lbl, text=':', font=(font_family, large_size, 'bold'),
 background=p_color, foreground=text_color, borderwidth=0)
-dot_label = Label(lbl, text='.', font=(font_family, 36, 'bold'),
+dot_label = Label(lbl, text='.', font=(font_family, large_size, 'bold'),
 background=p_color, foreground=text_color, borderwidth=0)
 # Placing clock at the centre
 # of the tkinter window
