@@ -68,23 +68,23 @@ def start(millisecond_label, seconds_label, minutes_label, hours_label, btn1, bt
         return str(num).zfill(2)
 
     def hourCount(hourCtn):
-        displayHour = str(hourCtn)
+        displayHour = padZero(hourCtn)
         hours_label['text'] = displayHour
         hourCounter=hourCtn
 
     def minuteCount(minuteCtn):
-        displayMinute = padZero(minuteCtn)
+        displayMinute = padZero(minuteCtn%60)
         minutes_label['text'] = displayMinute
         if((int(minuteCtn/60))!=hourCounter):
             hourCount(int(minuteCtn/60))
-        minuteCounter = minuteCtn
+        minuteCounter = minuteCtn%60
 
     def secondCount(secondCtn):
-        displaySecond = padZero(secondCtn)
+        displaySecond = padZero(secondCtn%60)
         seconds_label['text'] = displaySecond
         if((int(secondCtn/60))!=minuteCounter):
             minuteCount(int(secondCtn/60))
-        secondCounter = secondCtn
+        secondCounter = secondCtn%60
     
     def milliCount():
         global run_id
