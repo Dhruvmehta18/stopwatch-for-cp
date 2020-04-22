@@ -25,4 +25,8 @@ Or use this command for faster start time
 ```json
     pyinstaller -w stopwatch.py
 ```
+Or use this command if you want to have the icon on the exe file
+```json
+    pyinstaller -w -i "[filepath_to_icon]" stopwatch.py
+```
 After making exe file. The exe file will be under dist folder
